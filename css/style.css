@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color1: rgb(255, 255, 235);
+    --color2: yellow;
+    --color3: orange;
+    --color4: blue;
+}
+
+h1 {
+    color: var(--color4);
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+}
+hr {
+    width: 30%;
+    margin: auto;
+}
+main {
+    width: 100%;
+    background-color: var(--color1);
+}
+header {
+    width: 100%;
+    min-height: 9vh;
+    background: linear-gradient(#111, #999);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    width: 40px;
+    height: 50px;
+    margin-left: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li {
+    font-size: 18px;
+    transition: all 1s ease-in-out;
+    padding: 5px;
+    margin: 12px;
+    z-index: 4;
+}
+
+nav ul li:hover {
+    background-color: var(--color2);
+    border-radius: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    justify-content: space-between;
+}
+
+/* end hesder */
+
+.sec1 {
+    width: 100%;
+    min-height: 90vh;
+    background: var(--color2);
+    position: relative;
+}
+.sec1 img {
+    width: 100%;
+    min-height: 90vh;
+    clip-path: circle(55% at 50% 30%);
+}
+
+/* end Section 1 */
+
+.sec2 {
+    width: 100%;
+    min-height: 30vh;
+}
+.sec2 .card {
+    width: 90%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: auto;
+    position: relative;
+    top: -12vh;
+}
+.d1,
+.d2,
+.d3,
+.d4 {
+    width: 20vw;
+    height: 18vh;
+    border: 1px solid var(--color3);
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 3px 3px 7px var(--color2);
+    transform: all 3s  ease-in-out;
+    margin: auto;
+}
+.d1 {
+    background: url(../imges/footballacademy.jpg) no-repeat center/100% 100%;
+}
+.d2 {
+    background: url(../imges/squashacademy.jpg) no-repeat center/100% 100%;
+}
+.d3 {
+    background: url(../imges/tennisacademy.jpg) no-repeat center/100% 100%;
+}
+.d4 {
+    background: url(../imges/swimmingacademy.jpg) no-repeat center/100% 100%;
+}
+.join{
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 202, 139, 0.6);
+    clip-path: circle(0% at 0% 0%);
+    transition: all 1s ease-in-out;
+}
+.join h3{
+    padding: 15px;
+}
+.d1:hover .join{
+    clip-path: circle(50% at 6% 0%);
+}
+.d2:hover .join{
+    clip-path: circle(50% at 6% 0%);
+}
+.d3:hover .join{
+    clip-path: circle(50% at 6% 0%);
+}
+.d4:hover .join{
+    clip-path: circle(50% at 6% 0%);
+}
+
+/* end section 2 */
+
+.sec3 {
+    width: 100%;
+    min-height: 30vh;
+    margin: auto;
+}
+.sec3 .innersec3 {
+    width: 90%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: auto;
+    padding-top: 30px;
+}
+.sec3 .text {
+    width: 45%;
+    color: var(--color4);
+    line-height: 1.5;
+    padding: 20px;
+}
+.right {
+    width: 45%;
+    height: 25vh;
+    border: 1px solid #000;
+    border-radius: 20px 20px 0 0;
+    background: url(../imges/about.jpg) no-repeat center/cover;
+    align-items: center;
+}
+.right .hov{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    background: rgba(236, 231, 231, 0.3);
+    clip-path: circle(0% at 50% 50%);
+    transition: all 1s ease-in-out;
+}
+.right:hover .hov{
+    clip-path: circle(100% at 50% 100%);
+}
+.text p {
+    margin-bottom: 20px;
+}
+
+/* end section 3 */
+
+.sec4 {
+    width: 100%;
+    min-height: 30vh;
+}
+.innersec4 {
+    width: 90%;
+    min-height: 30vh;
+    margin: auto;
+}
+table {
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+    text-align: center;
+}
+table tr td {
+    padding: 10px;
+}
+table tr:nth-of-type(even) {
+    background: rgb(173, 173, 173);
+}
+
+/* end section 4 */
+
+.sec5 {
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 20px;
+}
+.innersec5 {
+    width: 90%;
+    min-height: 50vh;
+    margin: auto;
+}
+.innersec5 .text2 {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 50px;
+}
+.innertext2 {
+    width: 30%;
+    min-height: 40vh;
+    border: 1px solid var(--color4);
+    border-radius: 5px;
+}
+.innertext2 img {
+    width: 100%;
+    height: 35vh;
+    border-radius: 5px 5px 0 0;
+}
+.innertext2 h2,
+.innertext2 p{
+    padding: 10px;
+}
+
+/* end section 5 */
+
+.sec6{
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.innersec6{
+    width: 90%;
+    min-height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    background: var(--color2);
+}
+.innersec6 img{
+    width: 45%;
+    min-height: 40vh;
+    padding: 10px;
+}
+
+/* end section 6 */
+
+.sec7{
+    width: 100%;
+    min-height: 40vh;
+}
+.sec7 iframe{
+    width: 100%;
+    min-height: 40vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* end section 7 */
+
+footer{
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    background: #111;
+    color: var(--color3);
+    padding-top: 3vh;
+}
+
+/* **************************************************** */
+
+.f{
+    width: 80%;
+    min-height: 130vh;
+    margin: auto;
+    background: rgba(221, 221, 174, .9);
+    position: relative;
+    top: -90vh;
+}
+form{
+    width: 90%;
+    min-height: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+form legend{
+    color: rgb(43, 28, 0);
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: 20px;
+}
+fieldset{
+    width: 100%;
+    min-height: 10vh;
+    padding: 10px;
+}
+form input{
+    width: 45%;
+    height: 6vh;
+    border: 1px solid var(--color2);
+    border-radius: 20px;
+    margin-bottom: 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+form input:focus{
+    outline: 1px solid rgb(43, 28, 0);
+}
+form label{
+    color: rgb(43, 28, 0);
+    font-size: 22px;
+    margin:10 0 20px 10;
+}
+#mal, #fem, #sw, #ten, #fot, #sq{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+/* end ************************************* */
+.welcom{
+    width: 350px;
+    min-height: 250px;
+    margin: auto;
+    background: rgba(97, 97, 86, 0.5);
+    position: relative;
+    top: -90vh;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.welcom h2{
+    color: #fff;
+    margin-bottom: 50px;
+}
+.welcom a{
+    text-decoration: none;
+    background: var(--color3);
+    color: #fff;
+    padding: 10px;
+    border: 1px solid var(--color3);
+    border-radius: 10px;
+}
+.welcom a:hover{
+    background: #fff;
+    color: var(--color3);
+}
+@media (max-width: 400px) {
+    header img {
+        margin: 5px auto;
+    }
+    nav ul {
+        display: none;
+    }
+    .d1,
+    .d2,
+    .d3,
+    .d4 {
+        width: 40vw;
+        height: 15vh;
+        margin: 5px auto;
+    }
+    .sec3 .innersec3 {
+        width: 90%;
+        display: block;
+    }
+    .sec3 .text {
+        width: 100%;
+    }
+    .right {
+        width: 90%;
+        margin: auto;
+    }
+    .innersec5 .text2 {
+        display: block;
+    }
+    .innertext2 {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .innersec6{
+        width: 90%;
+        min-height: 80vh;
+        display: block;
+    }
+    .innersec6 img{
+        width: 100%;
+        display: block;
+    }
+}
